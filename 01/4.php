@@ -9,7 +9,7 @@
 /**
  * @link http://manual.phpdoc.org/HTMLframesConverter/default/
  *
- * @method static int search(string $query,$limit = 10,$offset = 0)
+ * @method static int search(string $query, $limit = 10, $offset = 0)
  */
 class SearchServiceProxy
 {
@@ -30,7 +30,8 @@ class SearchServiceProxy
     }
 }
 
-class SearchService{
+class SearchService
+{
 
     /**
      * @param string $query
@@ -40,7 +41,8 @@ class SearchService{
      * @return array
      * @deprecated
      */
-    public static function search(string $query,$limit = 10,$offset = 0){
+    public static function search(string $query, $limit = 10, $offset = 0)
+    {
         return [
             ["id" => 1, "aaa"],
             ["id" => 2, "bbb"],
@@ -57,8 +59,10 @@ var_export($res);
  * Class SearchDemo
  * @see SearchServiceProxy::search()
  */
-class SearchDemo{
-    public static function test(){
+class SearchDemo
+{
+    public static function test()
+    {
         SearchService::search("xxx");
     }
 }
