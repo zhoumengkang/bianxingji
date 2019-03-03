@@ -66,7 +66,7 @@ function addUserAction()
         $res = addUserBiz("xxxx", 1);
     }catch (BizException $e){
         $res["success"] = false;
-        echo json_encode($res);
+        echo json_encode($res);exit;
     }
 
     echo json_encode(["success" => true, "id" => $res]);
